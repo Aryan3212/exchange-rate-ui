@@ -65,6 +65,7 @@ function swapExchangeRate() {
   let temp = currencyOne.value;
   currencyOne.value = currencyTwo.value;
   currencyTwo.value = temp;
+  updateExchangeRate();
   calculateExchangeValue();
 }
 
