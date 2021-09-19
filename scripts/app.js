@@ -16,9 +16,9 @@ function fetchExchangeRateData() {
   const currency_two = currencyTwo.value;
 
   const localData = JSON.parse(localStorage.getItem("exchange_rate_data"));
-  console.log(Date.now());
-  console.log(localData);
-  if(localData && +localData.time_last_updated + 5000 > Date.now()){
+  // console.log(Date.now());
+  // console.log(localData);
+  if(!localData ||  +localData.time_last_updated + 5000 > Date.now()){
   fetch(`https://api.exchangerate-api.com/v4/latest/${currency_one}`)
     .then((res) => res.json())
     .then((data) => {
