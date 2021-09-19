@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;800&display=swap');
+@import './partials/variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $primary-color;
+    font-family: $default-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: $black;
+}
+p {
+    text-align: center;
+}
+
+.btn {
+    color: $black;
+    background-color: $green;
+    border-radius: 10px;
+    padding: 5px 12px;
+    font-size: 12px;
+}
+.money-img {
+    width: 150px;
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    select {
+        padding: 20px 30px 20px 30px;
+        color: $white;
+    appearance: none;
+    border: 1px solid #dedede;
+    font-size: 30px;
+    border-radius: 10px 10px;
+    border: $primary-color;
+    background: rgba(1,1,1,0.1);
+    &:focus{
+        outline:none;
+    }
+    }
+}
+
+.swap-rate-container {
+    display: flex;
+    justify-content: center;
+    color: $green;
+    #rate {
+        text-align: right;
+        width: 100%;
+    }
+}
+
+#swap.btn {
+    color: $white;
+    font-size: 30px;
+    border: #dedede;
+    padding: 20px 30px 20px 30px;
+}
+
+input {
+    border: none;
+    text-align: right;
+    background: none;
+    font-size: 30px;
+    min-width: 30%;
+    &:focus{
+        outline:none;
+    }
+}
+
+#updateData.btn{
+    @extend #swap.btn;
+    background-color: $red;
+}

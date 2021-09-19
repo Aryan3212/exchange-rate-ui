@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #a1dbcf;
+  font-family: "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #242333;
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  color: #242333;
+  background-color: #2ecc71;
+  border-radius: 10px;
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+.money-img {
+  width: 150px;
+}
+
+.currency {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50vw;
+}
+
+.currency select {
+  padding: 20px 30px 20px 30px;
+  color: #f9fafb;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #dedede;
+  font-size: 30px;
+  border-radius: 10px 10px;
+  border: #a1dbcf;
+  background: rgba(1, 1, 1, 0.1);
+}
+
+.currency select:focus {
+  outline: none;
+}
+
+.swap-rate-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2ecc71;
+}
+
+.swap-rate-container #rate {
+  text-align: right;
+  width: 100%;
+}
+
+#swap.btn, #updateData.btn {
+  color: #f9fafb;
+  font-size: 30px;
+  border: #dedede;
+  padding: 20px 30px 20px 30px;
+}
+
+input {
+  border: none;
+  text-align: right;
+  background: none;
+  font-size: 30px;
+  min-width: 30%;
+}
+
+input:focus {
+  outline: none;
+}
+
+#updateData.btn {
+  background-color: #e74c3c;
+}
